@@ -32,10 +32,14 @@ main()
 	int i = 0;
 	int a = 0;
 	int size = 0;
+	string file;
+	
+	cout << "Enter the file name: " << endl;
+	cin >> file;
 
 	//open the file
 	ifstream input;
-	input.open("data");
+	input.open("file");
 	
 	//make sure it opened correctly
 	if (input.fail())
@@ -70,7 +74,6 @@ main()
 	}
 		
 }
-
 
 
 
